@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todolistapp/views/todo_view.dart';
 
 void main() {
   runApp(const TodolistApp());
@@ -9,6 +10,14 @@ class TodolistApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      // theme: ThemeData.light(),
+      theme: ThemeData(
+        brightness: Brightness.dark,
+            // scaffoldBackgroundColor: Colors.orange
+      ),
+      home:  const TodoView(),
+
+    );
   }
 }
